@@ -1,0 +1,61 @@
+.link-block {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #ee0000;
+    background-color: #90EE90;
+}
+
+#link-same-tab {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #f7ee04;
+    background-color: #333333;
+}
+
+
+#link-bottom {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h1.formatting-title {
+    background-color: #f5f5dc;
+    color: #28a745;
+    padding: 10px 15px;
+    font-style: italic;
+}
+
+
+h1.listing-title {
+    background-color: #4a8fa8;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 4px 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+#fruit-table {
+    margin: 0 auto;
+}
+
+#fruit-table tfoot td {
+    font-weight: bold;
+}
