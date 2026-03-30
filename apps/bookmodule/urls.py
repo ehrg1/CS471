@@ -9,4 +9,5 @@ path('html5/links', views.links_view, name='links'),
 path('html5/text/formatting', views.text_formatting_view, name='text_formatting'),
 path('html5/listing', views.listing_view, name='listing'),
 path('html5/tables', views.tables_view, name='tables'),
+path('search', views.search_view, name='search'),
 ] 
