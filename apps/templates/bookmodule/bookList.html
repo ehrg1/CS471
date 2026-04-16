@@ -2,6 +2,10 @@
 {% load static %}
 
 {% block title %} Book List {% endblock title %}
+{% for obj in books %}
+    ID: {{obj.id}}, Title: {{obj.title}}
+    <hr>
+{% endfor %}
 
 {% block content %}
 
