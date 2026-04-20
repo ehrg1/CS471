@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+{% block title %} Task 2 {% endblock %}
+{% block content %}
+<h2>Books with Edition > 3 and title/author contains 'qu'</h2>
+{% for book in books %}
+    <p>ID: {{ book.id }} | Title: {{ book.title }} | Author: {{ book.author }} | Edition: {{ book.edition }}</p>
+    <hr>
+{% empty %}
+    <p>No books found.</p>
+{% endfor %}
+{% endblock content %}
