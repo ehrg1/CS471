@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+{% block title %} Task 3 - Oldest Book per Publisher {% endblock %}
+{% block content %}
+<h2>Oldest Book for Each Publisher</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Publisher</th>
+        <th>Location</th>
+        <th>Oldest Book Date</th>
+    </tr>
+    {% for publisher in publishers %}
+    <tr>
+        <td>{{ publisher.name }}</td>
+        <td>{{ publisher.location }}</td>
+        <td>{{ publisher.oldest_book }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="3">No publishers found.</td></tr>
+    {% endfor %}
+</table>
+{% endblock content %}

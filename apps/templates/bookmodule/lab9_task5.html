@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+{% block title %} Task 5 - Highly Rated Books {% endblock %}
+{% block content %}
+<h2>Publishers with Highly Rated Books (Rating >= 4)</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Publisher</th>
+        <th>Location</th>
+        <th>Count of Highly Rated Books</th>
+    </tr>
+    {% for publisher in publishers %}
+    <tr>
+        <td>{{ publisher.name }}</td>
+        <td>{{ publisher.location }}</td>
+        <td>{{ publisher.high_rated_count }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="3">No publishers found.</td></tr>
+    {% endfor %}
+</table>
+{% endblock content %}

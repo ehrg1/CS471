@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+{% block title %} Task 4 - Price Stats per Publisher {% endblock %}
+{% block content %}
+<h2>Price Statistics for Each Publisher</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Publisher</th>
+        <th>Location</th>
+        <th>Average Price</th>
+        <th>Minimum Price</th>
+        <th>Maximum Price</th>
+    </tr>
+    {% for publisher in publishers %}
+    <tr>
+        <td>{{ publisher.name }}</td>
+        <td>{{ publisher.location }}</td>
+        <td>{{ publisher.avg_price|floatformat:2 }}</td>
+        <td>{{ publisher.min_price }}</td>
+        <td>{{ publisher.max_price }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="5">No publishers found.</td></tr>
+    {% endfor %}
+</table>
+{% endblock content %}
